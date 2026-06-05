@@ -1,0 +1,466 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>hotel_confirmation</title>
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="static/favicon.ico" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- 樣式start -->
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: "Microsoft JhengHei";
+	font-size: 18px;
+	line-height: 28px;
+}
+.header {
+	width: 100%;
+	background-color: #FFFFFF;
+	height: 62px;
+	color: #7b7f80;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.headfontcolor{
+	font-weight: 600;
+	font-size: 20px;
+	word-spacing: -5px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	position: relative;
+	top: -3px;
+}
+.headfontglass{
+	position: relative;
+	top: -1px;
+}
+.header2 {
+	width: 100%;
+	background-color: #FFC56C;
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 50px;
+	font-size: 36px;
+	color: #FFF;
+	font-weight: bolder;
+	line-height: 70px;
+}
+@media screen and (max-width: 736px) {
+.header2 {
+	width: 100%;
+	background-color: #FFC56C;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	font-size: 20px;
+	color: #FFF;
+	font-weight: bolder;
+	line-height: 40px;
+}
+}
+.main80{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: block;
+	margin-right: 10%;
+	margin-left: 10%;
+	text-align: center;
+}
+@media screen and (max-width: 736px) {
+.main80{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: block;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+}
+.main{
+	display: block;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	clear: both;
+	float: none;
+	font-size: 18px;
+	line-height: 25px;
+    color: #000;
+}
+
+
+.main-memo-left{
+	display: block;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+	clear: both;
+	float: none;
+	line-height: 36px;
+	font-size: 18px;
+    color: #000;
+}
+@media screen and (max-width: 736px) {
+.main-memo-left{
+	display: block;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+	clear: both;
+	float: none;
+	font-size: 16px;
+	line-height: 30px;
+}
+}
+
+
+.hotel_confirmation_hr{
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #D9D9D9;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	clear: both;
+	float: none;
+}
+
+.main h1{
+	color: #666;
+	font-size: 30px;
+}
+
+.photoimg{
+	width: 49%;
+	float: left;
+	display: block;
+}
+@media screen and (max-width: 736px) {
+.photoimg{
+	width: 100%;
+}
+}
+
+.photoimg img{
+	object-fit: cover;
+	max-height: 400px;
+	width: 100%;
+}
+
+.photomain{
+	width: 49%;
+	margin-top: 10px;
+	float: left;
+	display: block;
+	text-align: left;
+	padding-left: 2%;
+}
+@media screen and (max-width: 736px) {
+.photomain{
+	width: 100%;
+}
+}
+
+.main .googlemap{
+	height: 400px;
+	width: 100%;
+	clear: both;
+	padding-bottom: 30px;
+}
+@media screen and (max-width: 736px) {
+.main .googlemap{
+	height: 300px;
+	width: 100%;
+	clear: both;
+}
+}
+
+.bookingpaidfull{
+	background-color: #F7F7F7;
+	border: 1px solid #E3E3E3;
+	height: 100%;
+	width: 100%;
+	clear: both;
+	padding-bottom: 60px;
+	padding-top: 50px;
+}
+
+.bookingpaidfullfield{
+	display: block;
+	margin-right: 10%;
+	margin-left: 10%;
+	height: 30px;
+}
+.bookingpaidfullfield_left{
+	display: inline-block;
+	float: left;
+	font-weight: bold;
+}
+.bookingpaidfullfield_right{
+	display: inline-block;
+	float: right;
+}
+@media screen and (max-width: 736px) {
+.bookingpaidfullfield{
+	display: block;
+	margin-right: 10%;
+	margin-left: 10%;
+	height: auto;
+}
+.bookingpaidfullfield_left{
+	display: block;
+	float: none;
+	clear: both;
+	font-weight: bold;
+}
+.bookingpaidfullfield_right{
+	display: block;
+	float: none;
+	clear: both;
+}
+}
+
+
+
+.confirm123_bt a{
+	font-size: 18px;
+	font-weight: 600;
+	color: #FFF;
+	background-color: #F90;
+	border: 1px solid #FF9F0F;
+	text-decoration: none !important;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	width: 150px;
+	text-align: center;
+}
+.confirm123_bt a:hover{
+	box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+}
+
+
+
+
+.main_center{
+	height: 100px;
+	width: 100%;
+	display: block;
+	margin-top: 30px;
+}
+
+
+
+</style>
+<!-- 樣式end -->
+</head>
+
+<body>
+<div class="main80">
+<img src="images_hotel_confirmation/hotel_confirmation_logo.jpg" />
+</div>
+
+<div class="header2">
+[Starway travel hotel] 訂單確認信
+<br>
+訂單號碼：H1537339752394
+</div>
+
+<div class="main80">
+	<div class="main">
+    如果您還有任何變更的需求，可以登入我們網站上的會員專區進行訂單修改。
+    </div>
+    
+    
+    <div class="main_center" style="display:flex;justify-content:center;">
+    	  <span class="confirm123_bt">
+          <a href="https://www.starwaytravel.online/members/myProfile">
+                  會員專區
+          </a>
+          </span>
+          &nbsp;&nbsp;&nbsp;
+    	  <span class="confirm123_bt">
+          <a href="https://www.starwaytravel.online/members/myOrder">
+                  訂單查詢
+          </a>
+          </span>
+    </div>
+    
+    
+    
+    
+  <div class="hotel_confirmation_hr"></div>
+    
+	<div class="main">
+        <h1>【訂單資訊】</h1>
+    </div>
+    
+	<div class="main">
+    	<div class="photoimg">
+            <img src="images_hotel_confirmation/images_hotel_confirmation.jpg" style="max-height:480px;">
+        </div>
+   	  	<div class="photomain">
+            <div style="color:Tomato">
+                <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
+            </div>
+            韓舍甜蜜時尚民宿(弘大)
+            <br>
+            Seoul Sweet Style Guest House (Hongdae)
+            <br>
+            酒店地址： 15, World Cup buk-ro 6-gil, Mapo-gu, Seoul, Seoul, 121-869, KOR.
+            <br>
+            酒店電話： +82-70-40093685
+            
+            <div class="hotel_confirmation_hr"></div>
+            
+            入住日期：2019年1月23日
+            <br>
+            退房日期：2019年1月25日
+            <br>
+            訂單姓名：張大明
+            <br>
+            訂房人數：3位成人，0位孩童
+            <br>
+            訂房數量：1間
+            <br>
+            早餐或其他：<font color="blue">免費早餐</font>
+		</div>
+    </div>
+    
+    
+    
+  <div style="display:block;width:100%;padding-top:20px;padding-bottom:20px;text-align:center;clear:both;float:none;font-size:18px;line-height:25px;color:#000;">
+    	<div style="background-color:#F7F7F7;border:1px solid #E3E3E3;height:100%;width:100%;clear:both;padding-bottom:60px;padding-top:50px;">
+            此筆訂單全額付款完畢，已預訂成功
+            <div style="border-bottom:1px dotted #d9d9d9;margin-top:20px;margin-bottom:20px;clear:both;float:none;"></div>
+            
+            <div class="bookingpaidfullfield">
+                <div class="bookingpaidfullfield_left" style="text-align:left;width:70%;">
+					ROOM 102
+					<br>
+					<span style="color:#777; font-size:14px;">
+					*一大床或二小床，含早餐 *平日：周日到周四；假日：周五到周六及連續休假日 *六歲以下免收佔床費，六歲(含)以上依規定收取每人每晚$600，12歲(含)以上以上收取加床費，每人每晚$1200(含備品早餐) *特殊加價日需洽詢本飯店或業務人員：聖誔節12/24-25 *跨年期間12/27-2020/1/1以定價購買
+					</span>
+				</div>
+                <div class="bookingpaidfullfield_right">HKD $942.00</div>
+			</div>
+	
+            
+            <div style="border-bottom:1px dotted #d9d9d9;margin-top:20px;margin-bottom:20px;clear:both;float:none;"></div>
+         
+            <div class="bookingpaidfullfield">
+                <div class="bookingpaidfullfield_left">信用卡刷卡幣別以及總金額</div>
+                <div class="bookingpaidfullfield_right">HKD $1,162.00</div>
+            </div>
+        </div>
+  </div>
+    
+
+
+
+	<div class="main">
+      <h1>【酒店地理位置】</h1>
+    </div>
+
+
+
+    
+    
+  <div class="main">
+    	<div class="googlemap">
+        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58378.458804471185!2d121.49100797583246!3d23.866428684532174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468a422b3d30aaf%3A0x2fc6c149d197caf9!2zOTc06Iqx6JOu57ij5aO96LGQ6YSJ55CG5oOz6LevMeiZnw!5e0!3m2!1szh-TW!2stw!4v1520582367021" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+  </div>
+    
+
+	<div class="main">
+      <h1>【房客入住須知】</h1>
+    </div>
+
+
+	<div class="main-memo-left">
+        <ul>
+            <li>房客入住需攜帶身分證件正本供本居宿登記並填寫房客入住登記卡。</li>
+            <li>嚴禁攜帶寵物入住，如有不遵守，本居宿將請房客立即退房，不退房租。</li>
+            <li>房客如有違反道德、善良風俗或違法之情事，本居宿立即報警處理。</li>
+            <li>本居宿附有中、西式早餐(供應時間為AM7:30~9:30)，入住時請填寫於房客入住登記卡。</li>
+            <li>入住人數如有增加，滿周歲-7歲 200元/員、7歲以上 300元/員，加床500元/員，皆提供寢具及早餐。</li>
+            <li>客房入住時間為PM3:30後，退房時間為AM11:00前。 如有提早入住或延遲退房需提早告知本居宿，將斟酌收費用200元/HR。入住當日如有訪客請於PM11:00前離開。</li>
+            <li>房客訂房需預付30%訂金，續住三日(以上)需預付50%訂金，農曆春節訂金為房價(原價)總額，匯款成功後請Mail或來電確認。 
+                <ul>
+                    <li>
+                    1.如因人力不可抗拒因素(颱風、地震、巨大災害) 無法於預定日期入住時,可更改入住日期或取消訂房,全額退費。(匯款費用房客自付)
+                    </li>
+                    <li>
+                    2.取消訂房：14天前告知退還全額訂金，10-13天退還70%，7-9天退還50%，4-6天退還40%，2-3天退還30%，前1日退還20%，住宿當日恕無退還訂金。(匯款費用房客自付) ＊農曆春節不適用＊
+                    </li>
+                </ul>
+            </li>
+            <li>房客如需諮詢或另額(如接送、租車、送洗、寄放或其他)服務，請提前通知本居宿湯小姐06-5749420、0958691196。</li>
+            <li>敬請房客愛惜使用物品、設備及主題配品，如有不當使用損壞或滅失時，須以新品價格全額賠償；出門前煩請檢查門窗及電器用品。</li>
+            <li>本居宿假日定義為周五晚到週日、寒暑假、連休假日前一晚起算。</li>
+        </ul>
+    </div>
+
+
+	<div class="hotel_confirmation_hr"></div>
+
+
+	<div class="main">
+      <h1>【其他實用資訊】</h1>
+    </div>
+    
+	<div class="main-memo-left">
+        <ul>
+            <li>旅宿提供Wi-Fi無線網路。</li>
+            <li>共用淋浴室2間，免費提供洗髮乳、潤髮乳、與沐浴乳。</li>
+            <li>共用洗臉台3處，1樓1處、2樓2處。</li>
+            <li>共用洗手間2間，1樓與2樓各1間。</li>
+            <li>大廳提供公用設備有冰箱、微波爐、過濾飲用水、快煮壺、熱水保溫瓶、旅遊雜誌與交通資訊。</li>
+            <li>行李秤重計、熨斗可出借。</li>
+            <li>擁有合法旅館執照，通過合格消防檢驗，全旅宿內備有火災煙霧感應器、逃生指示燈、逃生路線圖、緊急照明、手電筒、滅火器等安全設備。</li>
+        </ul>
+        
+        
+    </div>
+
+	<div class="hotel_confirmation_hr"></div>
+
+
+	<div class="main">
+      <h1 style="color: #FF5722;">【注意事項】</h1>
+    </div>
+    
+	<div class="main-memo-left">
+        <ul>
+            <li>訂房取消手續:依照預訂時提供的取消方案為主。</li>
+            <li>酒店的星級標準可能因國家的不同而略有差異。 所有的酒店資訊均由各供應商以最大誠信原則提供，如有任何資訊的差異、謬誤或不完整之處，我們恕不對使用者和/或第三方承擔任何責任，敬請見諒。所有資訊僅供參考，系統有權隨時更改網站產品內容，恕不先行通知。</li>
+            <li>每間酒店的兒童政策都各有不同，請先向客戶服務人查詢。一般來說，被定義為不收費兒童可以免費跟2位成人一起入住而不用額外加床。酒店預留權利向一些小孩年齡與預訂時所提供的資料不符的客人作出適當的收費。嬰兒或小孩在免費入住的情況下將不會包含早餐。如酒店在入住時發現沒有在預訂單上表明伴隨的嬰兒或孩子，酒店有權利收取額外費用。</li>
+            <li>由於不可抗力之因素導致我們直接或間接無法履行義務或無法如期履行義務的，我方不承擔任何責任。上述情況包括但不限於：自然災害、暴動、戰爭、治安動亂、革命運動、恐怖活動、政府或權威機構封鎖、禁運（包括但不限於拒辦或撤銷執照、許可證）、火災、水災、流行傳染疾病、雷擊、爆炸、大霧或惡劣天氣、公共服務中斷或停止（包括但不限於水、電、氣或通訊設施）、酒店裝修、罷工、停工、封鎖、制裁、禁運等。關於住宿服務資訊的錯誤或疏漏，不承擔任何責任。房費最終決定權會按酒店安排為準。</li>
+            <li>列出的酒店圖片和其資料均由酒店或其供應商提供, 並只作參考之用途。我方並不會為酒店資料的真確性, 變更或(及)更改, 或其照片因天氣, 拍攝方法, 磨損, 或(及) 酒店的結構外貌而引伸出的錯覺承擔任何責任。</li>
+        </ul>
+        
+        
+    </div>
+
+
+
+    
+</div>
+
+
+<br><br><br>
+
+
+
+</body>
+</html>

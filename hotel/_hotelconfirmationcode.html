@@ -1,0 +1,429 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>hotel_confirmation</title>
+<!-- 樣式start -->
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: "Microsoft JhengHei";
+	font-size: 18px;
+	line-height: 28px;
+}
+.header {
+	width: 100%;
+	background-color: #FFFFFF;
+	height: 62px;
+	color: #7b7f80;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.headfontcolor{
+	font-weight: 600;
+	font-size: 20px;
+	word-spacing: -5px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	position: relative;
+	top: -3px;
+}
+.headfontglass{
+	position: relative;
+	top: -1px;
+}
+.header2 {
+	width: 100%;
+	background-color: #FFC56C;
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 50px;
+	font-size: 36px;
+	color: #FFF;
+	font-weight: bolder;
+	line-height: 70px;
+}
+@media screen and (max-width: 736px) {
+.header2 {
+	width: 100%;
+	background-color: #FFC56C;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	font-size: 20px;
+	color: #FFF;
+	font-weight: bolder;
+	line-height: 40px;
+}
+}
+.main80{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: block;
+	margin-right: 10%;
+	margin-left: 10%;
+	text-align: center;
+}
+@media screen and (max-width: 736px) {
+.main80{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: block;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+}
+.main{
+	display: block;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	text-align: center;
+	clear: both;
+	float: none;
+	font-size: 18px;
+	line-height: 25px;
+    color: #000;
+}
+
+
+.main-memo-left{
+	display: block;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+	clear: both;
+	float: none;
+	line-height: 36px;
+	font-size: 18px;
+    color: #000;
+}
+@media screen and (max-width: 736px) {
+.main-memo-left{
+	display: block;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+	clear: both;
+	float: none;
+	font-size: 16px;
+	line-height: 30px;
+}
+}
+
+
+.hotel_confirmation_hr{
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #D9D9D9;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	clear: both;
+	float: none;
+}
+
+.main h1{
+	color: #666;
+	font-size: 30px;
+}
+
+.photoimg{
+	width: 49%;
+	float: left;
+	display: block;
+}
+@media screen and (max-width: 736px) {
+.photoimg{
+	width: 100%;
+}
+}
+
+.photoimg img{
+	object-fit: cover;
+	max-height: 400px;
+	width: 100%;
+}
+
+.photomain{
+	width: 49%;
+	margin-top: 10px;
+	float: left;
+	display: block;
+	text-align: left;
+	padding-left: 2%;
+}
+@media screen and (max-width: 736px) {
+.photomain{
+	width: 100%;
+}
+}
+
+.main .googlemap{
+	height: 400px;
+	width: 100%;
+	clear: both;
+	padding-bottom: 30px;
+}
+@media screen and (max-width: 736px) {
+.main .googlemap{
+	height: 300px;
+	width: 100%;
+	clear: both;
+}
+}
+
+.bookingpaidfull{
+	background-color: #F7F7F7;
+	border: 1px solid #E3E3E3;
+	height: 100%;
+	width: 100%;
+	clear: both;
+	padding-bottom: 60px;
+	padding-top: 50px;
+}
+
+.bookingpaidfullfield{
+	display: block;
+	margin-right: 10%;
+	margin-left: 10%;
+	height: 30px;
+}
+.bookingpaidfullfield_left{
+	display: inline-block;
+	float: left;
+	font-weight: bold;
+}
+.bookingpaidfullfield_right{
+	display: inline-block;
+	float: right;
+}
+@media screen and (max-width: 736px) {
+.bookingpaidfullfield{
+	display: block;
+	margin-right: 10%;
+	margin-left: 10%;
+	height: auto;
+}
+.bookingpaidfullfield_left{
+	display: block;
+	float: none;
+	clear: both;
+	font-weight: bold;
+}
+.bookingpaidfullfield_right{
+	display: block;
+	float: none;
+	clear: both;
+}
+}
+
+.confirm123_bt{
+	display: inline-block;
+	margin-bottom: 20px;
+}
+@media screen and (max-width: 736px) {
+.confirm123_bt{
+	display: block;
+}
+}
+.confirm123_bt a{
+	font-size: 18px;
+	font-weight: 600;
+	color: #FFF;
+	background-color: #F90;
+	border: 1px solid #FF9F0F;
+	text-decoration: none !important;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	text-align: center;
+}
+.confirm123_bt a:hover{
+	box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+}
+@media screen and (max-width: 736px) {
+.confirm123_bt a{
+	font-size: 15px;
+	font-weight: 600;
+	color: #FFF;
+	background-color: #F90;
+	border: 1px solid #FF9F0F;
+	text-decoration: none !important;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+}
+
+.main_center{
+	height: 100px;
+	width: 100%;
+	display: block;
+	margin-top: 30px;
+	padding-bottom: 20px;
+}
+@media screen and (max-width: 736px) {
+.main_center{
+	height: auto;
+	width: 100%;
+	display: block;
+	margin-top: 30px;
+	text-align: left;
+}
+}
+
+.main_havebg{
+	background-color: #fec273;
+	color: #803300;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	font-weight: 600;
+	border-left-width: 3px;
+	border-left-style: solid;
+	border-left-color: #D05300;
+}
+
+.main table{
+	background-color: #CCC;
+	width: 100% !important;
+}
+@media screen and (max-width: 736px) {
+.main table{
+	background-color: #CCC;
+	width: 550px !important;
+}
+}
+.main td{
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	background-color: #FFF;
+}
+
+
+
+</style>
+<!-- 樣式end -->
+</head>
+
+<body>
+
+<div class="main80">
+    <img src="https://ci3.googleusercontent.com/proxy/fEFuw9txpVMTpXviCwnoNDa4y-mdwLoAU6sn6z_H9EjDJosUeve1MyoXQn0mCmM3SzfiEKfzoT8Q_QDiMn07Iu9B3bQYAj8UPMNbpQBSYIUHoj19uQHaIijfX6nkS9vltHYKxGOVY4HY51-IWUhJvw=s0-d-e1-ft#https://storage.googleapis.com/cdn.starwaytravel.online/images/hotel_confirmation_logo.jpg" width="281" height="60" class="CToWUd">
+    <div class="hotel_confirmation_hr"></div>
+</div>
+
+<div class="main80">
+
+
+
+
+
+    <div style="text-align:left;background-color:#fef2b8;margin-bottom:20px;border-radius:6px 50px 6px 6px;overflow:hidden;background-image: url(images_index/iconsbuycard.png);background-position: right bottom;background-repeat: no-repeat;">
+        <div style="width: 100%;">
+        	<div style="background-color:#585755;color:#fff;padding: 12px 20px;display: block;">
+                預訂成功，訂單已經獲得確認！ 
+            </div>
+            <div style="width:80%;padding-left: 20px;">
+                <p>我們致力於提供最方便的系統，優惠的價格，讓您可以盡請享受歡樂的假期，再次感謝您使用我們的服務。</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+	<div class="main_havebg" style="text-align: left;">
+    有關本次訂單的詳細內容
+    </div>
+    
+    
+	<div class="main" style="text-align: left;">
+        <table cellpadding="1" cellspacing="1">
+          <tr>
+            <td align="left" valign="middle" style="width: 150px;">訂單編號<br></td>
+            <td align="left" valign="middle">H1521805256080</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" style="width: 150px;color:#080df7;">飯店確認代碼<br></td>
+            <td align="left" valign="middle" style="color:#080df7;">RY656797</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" style="width: 150px;">住客姓名</td>
+            <td align="left" valign="middle">Pedro, Liao</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" style="width: 150px;">酒店名稱</td>
+            <td align="left" valign="middle">素坤逸2巷最佳西方舒心飯店(SureStay Plus by Best Western Sukhumvit 2)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" style="width: 150px;">房型</td>
+            <td align="left" valign="middle">高級房(兩床) (Superior Twin Bed)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" style="width: 150px;">入住日期</td>
+            <td align="left" valign="middle">2018年04月13日</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" style="width: 150px;">退房日期</td>
+            <td align="left" valign="middle">2018年04月15日</td>
+          </tr>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" style="width: 150px;">入住人數</td>
+            <td align="left" valign="middle">2位成人，1位孩童，2間客房</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" style="width: 150px;">備註</td>
+            <td align="left" valign="middle">2可能會加床</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" style="width: 150px;background-color: #fef3b8;">訂單狀態</td>
+            <td align="left" valign="middle" style="background-color: #fef3b8;">訂房確定</td>
+          </tr>
+        </table>
+    </div>
+    
+    <div class="main_center">
+          <div class="confirm123_bt">
+          <a href="#">
+                  返回首頁
+          </a>
+          </div>
+          
+    	  <div class="confirm123_bt">
+          <a href="#">
+                  會員專區
+          </a>
+          </div>
+          
+    	  <div class="confirm123_bt">
+          <a href="#">
+                  飯店確認代碼查詢
+          </a>
+          </div>
+    </div>
+    
+	<div class="hotel_confirmation_hr"></div>
+        <p style="text-align: left; color:#F60;">請注意：此郵件是系統自動傳送，請勿直接回覆此郵件。</p>
+	<div class="hotel_confirmation_hr"></div>
+    
+	<div class="main" style="text-align: left;">
+        <p>如果您還有任何問題，<br>
+        歡迎隨時與我們的客服聯繫。<br>
+        謝謝！<br><br>
+        Starway HOTELS 敬啟</p>
+    </div>
+
+</body>
+</html>

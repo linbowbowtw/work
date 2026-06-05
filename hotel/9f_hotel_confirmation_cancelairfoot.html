@@ -1,0 +1,382 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>hotel_confirmation</title>
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="static/favicon.ico" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- 樣式start -->
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: "Microsoft JhengHei";
+	font-size: 18px;
+	line-height: 28px;
+}
+.header {
+	width: 100%;
+	background-color: #FFFFFF;
+	height: 62px;
+	color: #7b7f80;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.headfontcolor{
+	font-weight: 600;
+	font-size: 20px;
+	word-spacing: -5px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	position: relative;
+	top: -3px;
+}
+.headfontglass{
+	position: relative;
+	top: -1px;
+}
+.header2 {
+	width: 100%;
+	background-color: #FFC56C;
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 50px;
+	font-size: 36px;
+	color: #FFF;
+	font-weight: bolder;
+	line-height: 70px;
+}
+@media screen and (max-width: 736px) {
+.header2 {
+	width: 100%;
+	background-color: #FFC56C;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	font-size: 20px;
+	color: #FFF;
+	font-weight: bolder;
+	line-height: 40px;
+}
+}
+.main80{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: block;
+	margin-right: 10%;
+	margin-left: 10%;
+	text-align: center;
+}
+@media screen and (max-width: 736px) {
+.main80{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: block;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+}
+.main{
+	display: block;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	clear: both;
+	float: none;
+	font-size: 18px;
+	line-height: 25px;
+    color: #000;
+}
+
+
+.main-memo-left{
+	display: block;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+	clear: both;
+	float: none;
+	line-height: 36px;
+	font-size: 18px;
+    color: #000;
+}
+@media screen and (max-width: 736px) {
+.main-memo-left{
+	display: block;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+	clear: both;
+	float: none;
+	font-size: 16px;
+	line-height: 30px;
+}
+}
+
+
+.hotel_confirmation_hr{
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #D9D9D9;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	clear: both;
+	float: none;
+}
+
+.main h1{
+	color: #666;
+	font-size: 30px;
+}
+
+.photoimg{
+	width: 49%;
+	float: left;
+	display: block;
+}
+@media screen and (max-width: 736px) {
+.photoimg{
+	width: 100%;
+}
+}
+
+.photoimg img{
+	object-fit: cover;
+	max-height: 400px;
+	width: 100%;
+}
+
+.photomain{
+	width: 49%;
+	margin-top: 10px;
+	float: left;
+	display: block;
+	text-align: left;
+	padding-left: 2%;
+}
+@media screen and (max-width: 736px) {
+.photomain{
+	width: 100%;
+}
+}
+
+.main .googlemap{
+	height: 400px;
+	width: 100%;
+	clear: both;
+	padding-bottom: 30px;
+}
+@media screen and (max-width: 736px) {
+.main .googlemap{
+	height: 300px;
+	width: 100%;
+	clear: both;
+}
+}
+
+.bookingpaidfull{
+	background-color: #F7F7F7;
+	border: 1px solid #E3E3E3;
+	height: 100%;
+	width: 100%;
+	clear: both;
+	padding-bottom: 60px;
+	padding-top: 50px;
+}
+
+.bookingpaidfullfield{
+	display: block;
+	margin-right: 10%;
+	margin-left: 10%;
+	height: 30px;
+}
+.bookingpaidfullfield_left{
+	display: inline-block;
+	float: left;
+	font-weight: bold;
+}
+.bookingpaidfullfield_right{
+	display: inline-block;
+	float: right;
+}
+@media screen and (max-width: 736px) {
+.bookingpaidfullfield{
+	display: block;
+	margin-right: 10%;
+	margin-left: 10%;
+	height: auto;
+}
+.bookingpaidfullfield_left{
+	display: block;
+	float: none;
+	clear: both;
+	font-weight: bold;
+}
+.bookingpaidfullfield_right{
+	display: block;
+	float: none;
+	clear: both;
+}
+}
+
+
+
+.confirm123_bt a{
+	font-size: 18px;
+	font-weight: 600;
+	color: #FFF;
+	background-color: #F90;
+	border: 1px solid #FF9F0F;
+	text-decoration: none !important;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	width: 150px;
+	text-align: center;
+}
+.confirm123_bt a:hover{
+	box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+}
+
+
+
+
+.main_center{
+	height: 100px;
+	width: 100%;
+	display: block;
+	margin-top: 30px;
+}
+
+
+
+</style>
+<!-- 樣式end -->
+</head>
+
+<body>
+<div class="main80">
+<img src="images_hotel_confirmation/hotel_confirmation_logo.jpg" width="281" height="60" />
+</div>
+
+<div class="header2" style="background-color:#f9ecf8; color:#9e4d84;">
+您兌換的獎勵已經取消！
+</div>
+
+<div class="main80">
+	<div class="main">
+    您可以登入網站上的會員專區瀏覽您的取消紀錄。
+    </div>
+    
+    
+    <div class="main_center">
+          <span class="confirm123_bt">
+          <a href="#" style="background-color:#9e4d84; border:1px solid #9e4d84;">
+                  前往會員專區
+          </a>
+          </span>
+    </div>
+    
+    
+    
+    
+
+
+    
+    
+    
+  <div class="main">
+    	<div class="bookingpaidfull">
+            您取消的內容如下
+            <div class="hotel_confirmation_hr"></div>
+            <div class="bookingpaidfullfield">
+                <div class="bookingpaidfullfield_left">取消項目</div>
+                <div class="bookingpaidfullfield_right">機場接送</div>
+            </div>
+            <div class="hotel_confirmation_hr"></div>
+            <div class="bookingpaidfullfield">
+                <div class="bookingpaidfullfield_left">接機地點</div>
+                <div class="bookingpaidfullfield_right">台灣-桃園國際機場</div>
+            </div>
+            <div class="bookingpaidfullfield">
+                <div class="bookingpaidfullfield_left" style="color:red;">接機日期</div>
+                <div class="bookingpaidfullfield_right" style="color:red;">2018-10-18</div>
+            </div>
+            <div class="bookingpaidfullfield">
+                <div class="bookingpaidfullfield_left">接機時段
+                </div>
+                <div class="bookingpaidfullfield_right">08:00~08:59</div>
+            </div>
+        </div>
+  </div>
+    
+
+
+
+    
+
+
+
+	<div class="main">
+      <h1 style="color: #FF5722;">【注意事項】</h1>
+    </div>
+    
+	<div class="main-memo-left">
+        <ul style="list-style-type:decimal;">
+            <li>變更/取消預約：須於原約定時間前24小時，來電服務專線變更或取消。24小時內預約接送資料無法變更；24小時內取消者視同使用乙次服務。異動日期或時間提前者仍須符合三個工作天前來電異動（連續假日及春節期間需七個工作天前）。</li>
+            <li>接機待時：接機等候時間為原預約航班飛機實際到達時間60分鐘內，依指定時間等待60分鐘，若已確認班機延誤，請立即致電通知服務中心。若服務人員確認班機已抵達但又無法連絡到本人時，或持卡人未上車，接送人員得於該班機實際到達時間起算等待60分鐘後逕行離開，並視同持卡人已使用過該次服務，</li>
+            <li>請您在下飛機後隨即開機並保持手機暢通，以利司機與您聯絡，若您在下飛機之後尚未收到簡訊或司機聯絡電話時，請主動聯絡機場接送客服中心以利及時聯絡司機，減少您等候時間。</li>
+            <li>乘客保險：每趟接送服務均為乘客投保乘客險，每一位乘客/每一事故之投保金額為__________。</li>
+            <li>同行人數：除本人外，如行李加上同行家人或友人未超過四人座車輛所乘載之範圍及行車安全考量內（車內乘客座位區不得放行李箱/紙箱等行李），皆可一同搭乘，但以一車為限，如超出四人座車輛所乘載之範圍，得自費升等七人座休旅車。（一車限定人數依交通法規規定）。</li>
+            <li>
+                國內/國外天災地變/戰亂/暴動等不可抗力因素，符合以下其中一項原因者，將取消本次派車。 
+                <br>
+                一．班機延誤或變更
+                <br> 
+                (a)原航班較原預約時間延遲4小時以上或跨日抵達台灣而無法臨時調度接送 
+                <br>
+                (b)變更航班及時間，於原預約時間6小時前致電客服中心取消 
+                <br>
+                二．航班取消
+                <br>
+                依國際機場當日航班公告時刻表為準。
+            </li>
+            <li>為尊重後續其他乘客權益及車內清潔，乘客坐椅請勿放置行李並嚴禁抽煙、嚼檳榔及飲食，寵物應放置於寵物籠內，其相關用品須全數放置於後車廂，若因上述情形致車輛毀損或髒亂留異味，持卡人須全數賠償相關修繕、清理及營業損失費用。</li>
+            <li>本服務僅提供一般平面道路機場接送服務，恕不配合指定進入地下/立體停車場或搬運行李至客戶指定地點（例如：搬運行李上/下樓）。</li>
+        </ul>
+        
+        
+    </div>
+
+<div class="hotel_confirmation_hr"></div>
+
+
+        <div class="main_center">
+    	  <div class="confirm123_bt">
+            <a href="https://www.starwaytravel.online/hotel/search" style="background-color:#9e4d84; border:1px solid #9e4d84;">
+                前往酒店首頁
+            </a>
+          </div>
+        </div>
+    
+    
+    
+</div>
+
+
+<br><br><br>
+
+
+
+</body>
+</html>

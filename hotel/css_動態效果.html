@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+<style>
+.test1{
+	background-color: #69F;
+	height: 100px;
+	width: 100px;
+	-webkit-transition: width 2s ease 0s, height 2s ease 1s;
+	-moz-transition: width 2s ease 0s, height 2s ease 1s;
+	-ms-transition: width 2s ease 0s, height 2s ease 1s;
+	-o-transition: width 2s ease 0s, height 2s ease 1s;
+	transition: width 2s ease 0s, height 2s ease 1s;
+	transform: translate(0,0);
+	transition: all 200ms ease-out;
+}
+.test1:hover{
+	width: 100px;
+	transform: translate(50px,50px);
+	transition: all 200ms ease-out;
+}
+
+
+#D1{
+    width:100px;
+    height:100px;
+    background:red;
+    position:relative;
+    animation:TestMove 5s infinite; /*IE*/
+    -moz-animation:TestMove 5s infinite; /*FireFox*/
+    -webkit-animation:TestMove 5s infinite; /*Chrome, Safari*/
+}
+@keyframes TestMove{
+    from {left:0%;}
+    to {left:80%;}
+}
+@-moz-keyframes TestMove{
+    from {left:0%;}
+    to {left:80%;}
+}
+@-webkit-keyframes TestMove{
+    from {left:0%;}
+    to {left:80%;}
+}
+
+
+#d2{
+	width: 100px;
+	height: 100px;
+	background-color: #FCC;
+transition: 100ms ease-out;
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="test1">
+123
+</div>
+
+
+<div style="width:500px; height:150px;">
+    <div id="D1">456
+    </div>
+</div>
+
+<div style="width:500px; height:150px;">
+    <div id="d2">789
+    </div>
+</div>
+
+
+</body>
+</html>

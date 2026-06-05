@@ -1,0 +1,392 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>hotel_confirmation</title>
+<!-- 字體圖標start -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<!-- 字體圖標end -->
+<!-- 樣式start -->
+<style type="text/css">
+body {
+	font-family: "Microsoft JhengHei";
+	font-size: 18px;
+	line-height: 28px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+.all .main .main-right .main-right-list table {
+}
+
+.all{
+	background-color: #F7F7F7;
+	width: 1200px;
+	border: 1px solid #CCC;
+	font-size: 14px;
+}
+
+.header {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	align-items: center;
+	width: 1200px;
+	background-color: #FFFFFF;
+	height: 62px;
+	color: #7b7f80;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	padding-top: 10px;
+}
+
+.headfontcolor{
+	font-weight: 600;
+	font-size: 20px;
+	word-spacing: -5px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	position: relative;
+	top: -3px;
+}
+
+.headfontglass{
+	position: relative;
+	top: -1px;
+}
+
+.header2 {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	width: 1200px;
+	background-color: #FFA41C;
+	text-align: center;
+	font-size: 15px;
+	color: #FFF;
+}
+@media screen and (max-width: 736px) {
+.header2 {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	width: 100%;
+	background-color: #FFA41C;
+	text-align: center;
+	font-size: 15px;
+	color: #FFF;
+}
+}
+
+.main{
+	display: block;
+	width: 1200px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	clear: both;
+	float: none;
+}
+
+.main-left{
+	display: block;
+	width: 560px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.main-right{
+	display: block;
+	width: 560px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+	float: right;
+	padding-right: 20px;
+	padding-left: 20px;
+	background-color: #E0E0E0;
+}
+.all .main .main-left .main-left-list table tr td {
+	padding: 10px;
+}
+.all .main .main-left .main-left-list table {
+}
+
+.main-left-list{
+	font-size: 14px;
+	line-height: 15px;
+	margin-bottom: 10px;
+}
+
+.main-right-list{
+	font-size: 14px;
+	line-height: 15px;
+}
+
+.main-right-list td{
+	padding: 10px;
+}
+
+.main-important{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	color: #FFF;
+	background-color: #F30;
+	height: 50px;
+	width: 100%;
+	clear: both;
+	float: none;
+}
+
+.tdrightuse{
+	border: 3px solid #F7F7F7;
+}
+
+.promotions{
+	padding-top: 20px;
+	padding-left: 4px;
+	color: #F00;
+	padding-bottom: 18px;
+}
+
+.footer{
+	margin: 30px;
+	font-size: 14px;
+	line-height: 15px;
+}
+
+.footer table{
+	border: 2px solid #CCC;
+}
+
+.footer table table{
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+.footer .sign{
+	border: 2px solid #E3E3E3;
+}
+
+.footer2{
+	margin: 30px;
+}
+
+
+</style>
+<!-- 樣式end -->
+</head>
+
+<body>
+<div class="all">
+<div class="header">
+    <strong>
+        STARWAY
+    </strong>
+    <span>
+        TRAVEL&nbsp;
+    </span>
+    <span class="headfontcolor">
+        <font color="#FF3333">H</font>
+        <font color="#d4c803">O</font>
+        <font color="#FF9900">T</font>
+        <font color="#6699FF">E</font>
+        <font color="#66CC66">L</font>
+        <font color="#663399">S</font>&nbsp;
+    </span>
+    <span class="headfontglass">
+    <svg class="svg-inline--fa fa-glass-martini fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="glass-martini" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M507.3 27.3c10-10 2.9-27.3-11.3-27.3H16C1.8 0-5.4 17.2 4.7 27.3L216 238.6V472h-92c-15.5 0-28 12.5-28 28 0 6.6 5.4 12 12 12h296c6.6 0 12-5.4 12-12 0-15.5-12.5-28-28-28h-92V238.6L507.3 27.3z"></path></svg>
+    </span>
+</div>
+
+<div class="header2">
+    請在入住時向酒店出示您的入住憑證(電子版或影印版本均可)
+</div>
+
+<div class="main">
+    <div class="main-left">
+        <div class="main-left-list">
+          <table width="100%" cellspacing="2" cellpadding="2">
+            <tr>
+              <td height="40" valign="middle">Booking ID:<br>
+預訂編號： </td>
+              <td height="40" valign="middle">abc-1231321213211</td>
+            </tr>
+            <tr>
+              <td width="170" height="40" valign="middle">Booking Reference No:<br>
+預訂參考編號： </td>
+              <td height="40" valign="middle">abc-1231321213211</td>
+            </tr>
+            <tr>
+              <td width="170" height="40" valign="middle">Client:<br>
+客戶： </td>
+              <td height="40" valign="middle">Chung hong men</td>
+            </tr>
+            <tr>
+              <td width="170" height="40" valign="middle">Member ID:<br>
+會員號： </td>
+              <td height="40" valign="middle">hl-123121331</td>
+            </tr>
+            <tr>
+              <td width="170" height="40" valign="middle">Country of Passport:<br>
+護照所在國籍： </td>
+              <td height="40" valign="middle">Taiwan</td>
+            </tr>
+            <tr>
+              <td width="170" height="40" valign="middle">Hotel:<br>
+酒店： </td>
+              <td height="40" valign="middle" bgcolor="#FFFFFF">Grand Hyatt Taipei</td>
+            </tr>
+            <tr>
+              <td width="170" height="40" valign="middle">Address:<br>
+地址： </td>
+              <td height="40" valign="middle" bgcolor="#FFFFFF">No.2 Songshou Road, Xinyi District, Taipei City</td>
+            </tr>
+            <tr>
+              <td width="170" height="40" valign="middle">Hotel Contact Number:<br>
+酒店電話號碼： </td>
+              <td height="40" valign="middle" bgcolor="#FFFFFF">886 2 2720 1234</td>
+            </tr>
+          </table>
+      </div>
+    </div>
+    <div class="main-right">
+        <div class="main-right-list">
+          <table width="100%" cellspacing="2" cellpadding="2">
+            <tr>
+              <td width="170" height="40" valign="middle">Number of Rooms:<br>
+              客房數量：</td>
+              <td height="40" valign="middle" class="tdrightuse">2</td>
+            </tr>
+            <tr>
+              <td width="170" height="40" valign="middle">Number of Extra Beds:<br>
+              加床數：</td>
+              <td height="40" valign="middle" class="tdrightuse">0</td>
+            </tr>
+            <tr>
+              <td width="170" height="40" valign="middle">Max Occupancy:<br>
+              最多入住人數：</td>
+              <td height="40" valign="middle" class="tdrightuse">4</td>
+            </tr>
+            <tr>
+              <td width="170" height="40" valign="middle">Breakfast: <br>
+              早餐：</td>
+              <td height="40" valign="middle" class="tdrightuse">Induded</td>
+            </tr>
+            <tr>
+              <td height="40" valign="middle">Room Type:<br>
+                房型：</td>
+              <td height="40" valign="middle" class="tdrightuse">&nbsp;</td>
+            </tr>
+            <tr>
+              <td height="40" valign="middle">Promotion:test<br>
+              優惠活動：</td>
+              <td height="40" valign="middle" class="tdrightuse">&nbsp;</td>
+            </tr>
+          </table>
+        </div>
+        <div class="promotions">
+          優惠活動及優惠條件詳情，敬請查看確認郵件。
+        </div>
+    </div>
+</div>
+
+<div class="main-important">
+到店前4~6天內取消訂單,需扣第一晚房價的50%費用; 到店前1~3天取消訂單,需扣第一晚房價的75%費用; 到店24小時
+內取消訂單,需扣第一晚房價的100%費用,24小時以前則不扣款; 入住一週前(7天)取消訂房,扣款單晚房
+</div>
+
+<div class="footer">
+  <table width="100%" border="0" align="center" cellpadding="2" cellspacing="2">
+    <tr>
+      <td align="left" valign="top"><table width="100%" cellspacing="2" cellpadding="2">
+        <tr>
+          <td><table width="100%" cellspacing="0" cellpadding="00">
+            <tr>
+              <td width="80" height="40">Arrival:<br>
+                抵達：</td>
+              <td height="40" bgcolor="#E8E8E8" style="padding-left:10px;">March 15, 2018</td>
+              <td height="40">&nbsp;</td>
+              <td width="100" height="40">Departure:<br>
+                退房：</td>
+              <td height="40" bgcolor="#E8E8E8" style="padding-left:10px;">March 17, 2018</td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td height="40" style="padding-left:6px;">Payment Details:<br>
+            支付詳情：</td>
+        </tr>
+        <tr>
+          <td><table width="100%" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="40" align="left" valign="middle" bgcolor="#E8E8E8" style="padding-left:10px;">支付方式： Master Card</td>
+              <td height="40" align="left" valign="middle">&nbsp;</td>
+              <td height="40" align="left" valign="middle" bgcolor="#E8E8E8" style="padding-left:10px;">Card No: xxxx-xxxx-xxxx-xxxx</td>
+              <td height="40" align="left" valign="middle">&nbsp;</td>
+              <td height="40" align="left" valign="middle" bgcolor="#E8E8E8" style="padding-left:10px;">EXP: -----------------</td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td height="40" style="padding-left:6px;">Booking And Payable By:<br>
+            預定和支付者：</td>
+        </tr>
+        <tr>
+          <td bgcolor="#E8E8E8" style="padding:10px; line-height:20px;">
+            台灣星程旅行社<br>
+            公司統編：52560019<br>
+            台北市信義區信義路四段415號3樓<br>
+            電話：02-27586001</td>
+        </tr>
+      </table></td>
+      <td width="300" align="right" valign="bottom"><table class="sign" width="100%" cellspacing="2" cellpadding="2">
+        <tr>
+          <td height="150" align="center" valign="bottom" style="padding-bottom:10px;">Authorized Stamp & Signature</td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+</div>
+
+<div class="footer2">
+  <table width="100%" border="0" align="center" cellpadding="2" cellspacing="2">
+    <tr>
+      <td align="left" valign="bottom">
+<strong>Remarks: </strong>Non Smoke, Early CheckIn, High Floor, Twin Beds,<br>
+<strong>Additional Notes: </strong>including 3 children (3 years, 1 year, and 7 months),<br>
+抵達後方能得知酒店能否能滿足特殊要求。
+      </td>
+      <td width="300" align="right" valign="bottom">
+客服熱線<br>
+<strong>客服中心： </strong>+886 2 27586001<br>
+(可能會收取長途費用)
+	  </td>
+    </tr>
+  </table>
+</div>
+
+</div>
+</body>
+</html>

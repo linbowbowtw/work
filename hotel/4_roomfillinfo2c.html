@@ -1,0 +1,1508 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+
+
+
+
+
+
+
+
+
+<!--20181108使用優惠碼start-->
+<style>
+.newoffercode{display:block; background-color:#ccc; font-size:13px;}
+@media screen and (max-width: 736px) {
+.newoffercode{display:block; background-color:#ccc;}
+}
+
+.newoffercode input{  
+	background-color:#fff !important;
+	border:#9E9E9E 1px solid !important;
+}
+.newoffercode input:focus{  
+	background-color:#fffd9f !important;
+}
+
+.newoffercode input::placeholder {
+	position:relative;
+	top:0px;
+}
+
+.roomsearchtooltipcode {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #c7c4c4;
+}
+.roomsearchtooltipcode .tooltiptext {
+    visibility: hidden;
+    min-width: 140px;
+    background-color: #54354c;
+    color: #fff;
+    text-align: left;
+    border-radius: 4px;
+    padding: 12px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -70px;
+    opacity: 0;
+    transition: opacity 0.3s;
+	line-height:18px;
+}
+.roomsearchtooltipcode .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #54354c transparent transparent transparent;
+}
+.roomsearchtooltipcode:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+</style>
+<!--20181108使用優惠碼end-->
+
+
+
+
+
+    
+    
+<!--20180913tooltip_start-->
+<style>
+.roomsearchtooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #c7c4c4;
+}
+
+.roomsearchtooltip .tooltiptext {
+    visibility: hidden;
+    min-width: 140px;
+    background-color: #2482b1;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -70px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.roomsearchtooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #2482b1 transparent transparent transparent;
+}
+
+.roomsearchtooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+</style>
+<!--20180913tooltip_end-->
+
+
+
+    
+    
+    
+	<title>Starwaytravel Hotels</title>
+        
+<!-- Favicon -->
+<link rel="shortcut icon" href="static/favicon.ico" />
+        
+        
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        
+	<!-- 頂選單出start -->
+    <!-- Bootstrap & Snippet plugin core CSS -->
+    <link href="css_topchoicein/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="stickup.css" rel="stylesheet">    
+	<!-- 頂選單出end -->
+        
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+        <!-- index use start-->
+		<link href="css/indexhotels.css" rel="stylesheet">
+		<link href="css/hotel_index.css" rel="stylesheet">
+        <!-- index use end-->
+		<link rel="stylesheet" href="w3/w3.css" />
+        <!-- Tooltip start-->
+		<link rel="stylesheet" href="hint.css/hint.css" />
+        <!-- Tooltip end-->
+        <!-- Footer 選單 start-->
+        <link href="css/index_footer.css" rel="stylesheet">
+        <style type="text/css">
+		body {
+			background-color: #FFFFFF;
+		}
+        </style>
+        <!-- Footer 選單 end-->
+
+        <!-- 字體圖標start -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- 字體圖標end -->
+        
+        <!-- 數字加減用start -->
+        <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="js_number/num-alignment.js"></script>
+        <!-- 數字加減用end -->
+        
+        <!--出圖底暗效果 start-->
+            <script src="roomtopsixphoto_candj/jquery.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="roomtopsixphoto_candj/demo.css">
+            <script type="text/javascript" src="roomtopsixphoto_candj/simple.slide.min.js"></script>
+            <link rel="stylesheet" href="roomtopsixphoto_candj/simple.slide.css">
+        <!--出圖底暗效果 end-->
+        
+<!-- stepbar start-->
+<link href="css_stepbar/style.css" rel="stylesheet" id="bootstrap-css">
+<style type="text/css">
+.bs-wizard {margin-top: 40px;}
+/*Form Wizard*/
+.bs-wizard {border-bottom: solid 1px #e0e0e0; padding: 0 0 10px 0;}
+.bs-wizard > .bs-wizard-step {padding: 0; position: relative;}
+.bs-wizard > .bs-wizard-step + .bs-wizard-step {}
+.bs-wizard > .bs-wizard-step .bs-wizard-stepnum {color: #595959; font-size: 16px; margin-bottom: 5px;}
+.bs-wizard > .bs-wizard-step .bs-wizard-info {color: #999; font-size: 14px;}
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot {position: absolute; width: 30px; height: 30px; display: block; background: #93cfe7; top: 45px; left: 50%; margin-top: -15px; margin-left: -15px; border-radius: 50%;} 
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot:after {content: ' '; width: 14px; height: 14px; background: #3c97bc; border-radius: 50px; position: absolute; top: 8px; left: 8px; } 
+.bs-wizard > .bs-wizard-step > .progress {position: relative; border-radius: 0px; height: 8px; box-shadow: none; margin: 20px 0;}
+.bs-wizard > .bs-wizard-step > .progress > .progress-bar {width:0px; box-shadow: none; background: #93cfe7;}
+.bs-wizard > .bs-wizard-step.complete > .progress > .progress-bar {width:100%;}
+.bs-wizard > .bs-wizard-step.active > .progress > .progress-bar {width:50%;}
+.bs-wizard > .bs-wizard-step:first-child.active > .progress > .progress-bar {width:0%;}
+.bs-wizard > .bs-wizard-step:last-child.active > .progress > .progress-bar {width: 100%;}
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot {background-color: #dddddd;}
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot:after {opacity: 0;}
+.bs-wizard > .bs-wizard-step:first-child  > .progress {left: 50%; width: 50%;}
+.bs-wizard > .bs-wizard-step:last-child  > .progress {width: 50%;}
+.bs-wizard > .bs-wizard-step.disabled a.bs-wizard-dot{ pointer-events: none; }
+/*END Form Wizard*/        
+</style>
+<!-- stepbar end-->
+        
+        
+        
+	</head>
+	<body class="left-sidebar">
+		<div id="page-wrapper">
+
+
+
+
+			
+            
+                
+
+
+
+<!-- mobile toplogo start -->
+<div class="toplogo">
+
+<h1>
+<img src="images_hotel_confirmation/starwayhotel_logo.jpg" />
+</h1>
+
+</div class="toplogo">
+<!-- mobile toplogo end -->
+
+
+
+
+
+
+<!-- Header start -->
+<header id="header">
+
+<h1>
+<img src="images_hotel_confirmation/starwayhotel_logo.jpg" />
+</h1>
+
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="index.html">首頁</a></li>
+							<li class="submenu">
+								<a onclick="document.getElementById('id01').style.display='block'" class="w3-btn" style="background-color:#FFF;">會員登入 或 王曉明會員，您好！</a>
+								<ul style="box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);">
+									<li><a href="left-sidebar.html">訂單查詢</a></li>
+									<li><a href="right-sidebar.html">點數查詢</a></li>
+									<li><a href="no-sidebar.html">我的最愛</a></li>
+									<li><a href="no-sidebar.html">訂購紀錄</a></li>
+									<li><a href="contact.html">登入 或 登出</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="button special">訂單查詢</a></li>
+						</ul>
+					</nav>
+                    
+</header>
+<!-- Header end -->
+
+
+
+
+<!-- 登入彈出區塊 start -->
+<div class="new3membersloginshow_all">
+
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-animate-top" style="width:840px; background-color:transparent;">
+    <header class="w3-container" style="color:#FFF;"> 
+      <span onclick="document.getElementById('id01').style.display='none'" 
+      class="w3-closebtn">&times;</span>
+    </header>
+    <div class="w3-container">
+    	<!-- 內容start -->
+    	<div class="new3membersloginshow">
+        	<div class="left">
+            	<div class="title">會員登入</div>
+                <div class="hr"></div>
+                <div class="mainbb">輕鬆一鍵！馬上加入會員…</div>
+                <div class="mainss">
+                    使用臉書登入會員，省時方便又快速！<br>
+                    立刻登入Facebook帳號，連結至會員系統
+                </div>
+                <div class="facebookbt">
+                    <a href="#">
+                        <span class="fbtitle">
+                            <span class="fa fa-facebook-official"></span>
+                        </span>
+                        <span class="fbmain">
+                            以 Facebook 帳號繼續
+                        </span>
+                    </a>
+                </div>
+                <div class="mainss">
+                	<div class="or">或是</div>
+                    <div class="hr" style="position: relative;top: 12px;"></div>
+                </div>
+                <div class="memberbtfield">
+                	<div class="memberbtfieldmain">
+                        <span class="memberbtfieldtitle">帳號</span>
+                        <span class="memberbtfieldfield"><input type="text"></span>
+                	</div>
+                    <div class="memberbtfieldmain">
+				                        <span class="memberbtfieldtitle">密碼12123test</span>  
+				                        <span class="memberbtfieldfield"><input type="password" name="password"></span>
+				                	</div>
+                    
+                    
+                    
+                    
+                	<div class="memberbtfieldmain">
+                        <span class="memberbtfieldtitle">密碼</span>  
+                        <span class="memberbtfieldfield"><input type="text"></span>
+                	</div>
+                </div>
+                <div class="memberbt">
+                    <a href="#">
+                        <span class="memberbtmain">
+                            登入
+                        </span>
+                    </a>
+                </div>
+                <div class="memberaccept">
+                    &nbsp;<span class="fa fa-check-circle"></span>&nbsp;繼續使用代表你同意我們的<a href="#">服務條款</a>與<a href="#">隱私權政策</a>。
+                </div>
+                <div class="hrss"></div>
+                <div class="memberbtfieldmain" style="float:left;">
+                    <span class="memberbtfieldforgotmmpw"><a href="#">忘記密碼？</a></span>  
+                </div>
+                <div class="memberbtfieldmain" style="float:right;">
+                    <span class="memberbtfieldforgotmmpw"><a href="#">免費註冊</a></span>  
+                </div>
+            </div>
+        	<div class="right">
+            	
+            </div>
+        </div>
+    	<!-- 內容end -->
+    </div>
+  </div>
+</div>
+
+</div>
+<!-- 登入彈出區塊 end -->
+
+
+
+
+
+
+<!-- Main start -->
+<div class="main1100top0">
+<div class="main1100main">
+
+    
+    <!-- title_start-->
+    <div class="hotel3allblock">
+        <div class="center">
+
+            <!-- stepbar start-->
+            <div class="container">
+            <div class="row bs-wizard" style="border-bottom:0;">
+                        
+                        <div class="col-xs-3 bs-wizard-step complete"><!-- complete -->
+                          <div class="text-center bs-wizard-stepnum roomsteptext1" style="text-align: center;">步驟1</div>
+                          <div class="progress"><div class="progress-bar"></div></div>
+                          <a href="#" class="bs-wizard-dot"></a>
+                          <div class="bs-wizard-info text-center roomsteptext2" style="text-align: center;">選擇房型</div>
+                        </div>
+                        
+                        <div class="col-xs-3 bs-wizard-step active"><!-- complete -->
+                          <div class="text-center bs-wizard-stepnum roomsteptext1" style="text-align: center;">步驟2</div>
+                          <div class="progress"><div class="progress-bar"></div></div>
+                          <a href="#" class="bs-wizard-dot"></a>
+                          <div class="bs-wizard-info text-center roomsteptext2" style="text-align: center;">填寫基本資料</div>
+                        </div>
+                        
+                        <div class="col-xs-3 bs-wizard-step disabled"><!-- active -->
+                          <div class="text-center bs-wizard-stepnum roomsteptext1" style="text-align: center;">步驟3</div>
+                          <div class="progress"><div class="progress-bar"></div></div>
+                          <a href="#" class="bs-wizard-dot"></a>
+                          <div class="bs-wizard-info text-center roomsteptext2" style="text-align: center;">結帳</div>
+                        </div>
+                        
+                        <div class="col-xs-3 bs-wizard-step disabled"><!-- active -->
+                          <div class="text-center bs-wizard-stepnum roomsteptext1" style="text-align: center;">步驟4</div>
+                          <div class="progress"><div class="progress-bar"></div></div>
+                          <a href="#" class="bs-wizard-dot"></a>
+                          <div class="bs-wizard-info text-center roomsteptext2" style="text-align: center;">完成</div>
+                        </div>
+            </div>
+            </div>    
+            <!-- stepbar end-->
+        
+        </div>
+    </div>
+    <!-- title_end-->
+    
+    
+    <!-- joinmember_start-->
+    <div class="hotels_info_fb" style="margin-bottom:20px;">
+        <div class="loginwithfbmemo">
+            登入您的Facebook帳號以連結至會員系統
+        </div>
+        <div class="bt_fb">
+        <a href="#" style="margin-top:-8px;">
+            <span class="fbrightslide">
+                <span class="fa fa-facebook-square"></span>
+            </span>
+            <span class="fbmemo">
+                使用 Facebook 應用程式登入
+            </span>
+        </a>
+        </div>
+    </div>
+    <!-- joinmember_end-->
+    
+    
+    
+    <!-- 左右內容_start -->
+    <div class="hotel3fillinfomain">
+        <!-- 左內容_start -->
+        <div class="left">
+            <div class="good" style="border-left-color: #F44336!important;background-color: #ffe5dd;color: #F44336;">
+            	<span class="fa fa-exclamation-triangle"></span> <span style="color: #F44336;font-weight:600;">WooooooP！</span>&nbsp;2018年08月23日此房已經售罄。<a href="#" style="color: #4469ae;">請選擇其他日子</a> 
+            </div>
+            <div class="good">
+            	<span class="fa fa-bullhorn" style="font-size:20px; color:#333;"></span> <span style="color:#F90; font-weight:600;">讚喔！</span>這間酒店有高達8.4分的評價。 
+            </div>
+            <div class="room_area_sideline">
+                <div class="room_header_memo">
+                    <span>
+                        <br>房客資訊 (已經是會員？<a href="#">登入</a> )
+                        <br><br>請注意，您必須擁有 Starway Hotels 會員資格才能以最優惠房價入住。加入會員完全免費，您可以隨時在訂房時加入會員。
+                  </span>
+                </div>
+                <div class="room_header">
+                    <span class="fa fa-pencil-square-o" style="font-size:20px; color:#333;"></span> 請填寫以下資訊
+                </div>
+
+              <div class="fillinfo">
+                    <div class="fillinfomain">英文名<font color="red">＊</font></div>
+                    <div class="fillinfomain"><input type="text" id="firstName" name="firstName" value="" placeholder="請填寫與護照相同的英文名"></div>
+                    <div class="fillinfomain">英文姓<font color="red">＊</font></div>
+                    <div class="fillinfomain"><input type="text" id="lastName" name="lastName" value="" placeholder="請填寫與護照相同的英文姓"></div>
+                    <div class="fillinfomain">電子信箱<font color="red">＊</font></div>
+                    <div class="fillinfomain"><input type="text" id="email" name="email" value="" placeholder="請填寫可聯繫上的電子郵件信箱地址"></div>
+                    <div class="fillinfomain">手機號碼<font color="red">＊</font></div>
+                    <div class="fillinfomain"><input type="text" id="mobilePhone" name="mobilePhone" value="" placeholder="請填寫手機號碼（含國碼，例如：+886-937000123）"></div>
+                    <div class="fillinfomain">手機通訊軟體 WHATSAPP</div>
+                    <div class="fillinfomain"><input type="text" id="orderWhatsapp" name="orderWhatsapp" value="" placeholder="請填寫WHATSAPP ID"></div>
+                    <div class="fillinfomain">手機通訊軟體 LINE</div>
+                    <div class="fillinfomain"><input type="text" id="orderLine" name="orderLine" value="" placeholder="請填寫LINE ID"></div>
+                    <div class="fillinfomain">手機通訊軟體 WECHAT</div>
+                    <div class="fillinfomain"><input type="text" id="orderWechat" name="orderWechat" value="" placeholder="請填寫WECHAT ID"></div>
+                    <div class="fillinfomain">居住國家</div>
+                    <div class="fillinfomain">
+                        <select name="country">
+                            <option value="">請選擇</option>
+                            
+                                <option value="1">Afghanistan</option>
+                            
+                                <option value="2">Åland Islands</option>
+                            
+                                <option value="3">Albania</option>
+                            
+                                <option value="4">Algeria</option>
+                            
+                                <option value="5">American Samoa</option>
+                            
+                                <option value="6">Andorra</option>
+                            
+                                <option value="7">Angola</option>
+                            
+                                <option value="8">Anguilla</option>
+                            
+                                <option value="9">Antarctica</option>
+                            
+                                <option value="10">Antigua and Barbuda</option>
+                            
+                                <option value="11">Argentina</option>
+                            
+                                <option value="12">Armenia</option>
+                            
+                                <option value="13">Aruba</option>
+                            
+                                <option value="14">Australia</option>
+                            
+                                <option value="15">Austria</option>
+                            
+                                <option value="16">Azerbaijan</option>
+                            
+                                <option value="17">Bahamas</option>
+                            
+                                <option value="18">Bahrain</option>
+                            
+                                <option value="19">Bangladesh</option>
+                            
+                                <option value="20">Barbados</option>
+                            
+                                <option value="21">Belarus</option>
+                            
+                                <option value="22">Belgium</option>
+                            
+                                <option value="23">Belize</option>
+                            
+                                <option value="24">Benin</option>
+                            
+                                <option value="25">Bermuda</option>
+                            
+                                <option value="26">Bhutan</option>
+                            
+                                <option value="27">Bolivia, Plurinational State of</option>
+                            
+                                <option value="28">Bonaire, Sint Eustatius and Saba</option>
+                            
+                                <option value="29">Bosnia and Herzegovina</option>
+                            
+                                <option value="30">Botswana</option>
+                            
+                                <option value="31">Bouvet Island</option>
+                            
+                                <option value="32">Brazil</option>
+                            
+                                <option value="33">British Indian Ocean Territory</option>
+                            
+                                <option value="34">Brunei Darussalam</option>
+                            
+                                <option value="35">Bulgaria</option>
+                            
+                                <option value="36">Burkina Faso</option>
+                            
+                                <option value="37">Burundi</option>
+                            
+                                <option value="38">Cambodia</option>
+                            
+                                <option value="39">Cameroon</option>
+                            
+                                <option value="40">Canada</option>
+                            
+                                <option value="41">Cape Verde</option>
+                            
+                                <option value="42">Cayman Islands</option>
+                            
+                                <option value="43">Central African Republic</option>
+                            
+                                <option value="44">Chad</option>
+                            
+                                <option value="45">Chile</option>
+                            
+                                <option value="46">China</option>
+                            
+                                <option value="47">Christmas Island</option>
+                            
+                                <option value="48">Cocos (Keeling) Islands</option>
+                            
+                                <option value="49">Colombia</option>
+                            
+                                <option value="50">Comoros</option>
+                            
+                                <option value="51">Congo</option>
+                            
+                                <option value="52">Congo, the Democratic Republic of the</option>
+                            
+                                <option value="53">Cook Islands</option>
+                            
+                                <option value="54">Costa Rica</option>
+                            
+                                <option value="55">Côte d'Ivoire</option>
+                            
+                                <option value="56">Croatia</option>
+                            
+                                <option value="57">Cuba</option>
+                            
+                                <option value="58">Curaçao</option>
+                            
+                                <option value="59">Cyprus</option>
+                            
+                                <option value="60">Czech Republic</option>
+                            
+                                <option value="61">Denmark</option>
+                            
+                                <option value="62">Djibouti</option>
+                            
+                                <option value="63">Dominica</option>
+                            
+                                <option value="64">Dominican Republic</option>
+                            
+                                <option value="65">Ecuador</option>
+                            
+                                <option value="66">Egypt</option>
+                            
+                                <option value="67">El Salvador</option>
+                            
+                                <option value="68">Equatorial Guinea</option>
+                            
+                                <option value="69">Eritrea</option>
+                            
+                                <option value="70">Estonia</option>
+                            
+                                <option value="71">Ethiopia</option>
+                            
+                                <option value="72">Falkland Islands (Malvinas)</option>
+                            
+                                <option value="73">Faroe Islands</option>
+                            
+                                <option value="74">Fiji</option>
+                            
+                                <option value="75">Finland</option>
+                            
+                                <option value="76">France</option>
+                            
+                                <option value="77">French Guiana</option>
+                            
+                                <option value="78">French Polynesia</option>
+                            
+                                <option value="79">French Southern Territories</option>
+                            
+                                <option value="80">Gabon</option>
+                            
+                                <option value="81">Gambia</option>
+                            
+                                <option value="82">Georgia</option>
+                            
+                                <option value="83">Germany</option>
+                            
+                                <option value="84">Ghana</option>
+                            
+                                <option value="85">Gibraltar</option>
+                            
+                                <option value="86">Greece</option>
+                            
+                                <option value="87">Greenland</option>
+                            
+                                <option value="88">Grenada</option>
+                            
+                                <option value="89">Guadeloupe</option>
+                            
+                                <option value="90">Guam</option>
+                            
+                                <option value="91">Guatemala</option>
+                            
+                                <option value="92">Guernsey</option>
+                            
+                                <option value="93">Guinea</option>
+                            
+                                <option value="94">Guinea-Bissau</option>
+                            
+                                <option value="95">Guyana</option>
+                            
+                                <option value="96">Haiti</option>
+                            
+                                <option value="97">Heard Island and McDonald Islands</option>
+                            
+                                <option value="98">Holy See (Vatican City State)</option>
+                            
+                                <option value="99">Honduras</option>
+                            
+                                <option value="100">Hong Kong</option>
+                            
+                                <option value="101">Hungary</option>
+                            
+                                <option value="102">Iceland</option>
+                            
+                                <option value="103">India</option>
+                            
+                                <option value="104">Indonesia</option>
+                            
+                                <option value="105">Iran, Islamic Republic of</option>
+                            
+                                <option value="106">Iraq</option>
+                            
+                                <option value="107">Ireland</option>
+                            
+                                <option value="108">Isle of Man</option>
+                            
+                                <option value="109">Israel</option>
+                            
+                                <option value="110">Italy</option>
+                            
+                                <option value="111">Jamaica</option>
+                            
+                                <option value="112">Japan</option>
+                            
+                                <option value="113">Jersey</option>
+                            
+                                <option value="114">Jordan</option>
+                            
+                                <option value="115">Kazakhstan</option>
+                            
+                                <option value="116">Kenya</option>
+                            
+                                <option value="117">Kiribati</option>
+                            
+                                <option value="118">Korea, Democratic People's Republic of</option>
+                            
+                                <option value="119">Korea, Republic of </option>
+                            
+                                <option value="120">Kuwait</option>
+                            
+                                <option value="121">Kyrgyzstan</option>
+                            
+                                <option value="122">Lao People's Democratic Republic</option>
+                            
+                                <option value="123">Latvia</option>
+                            
+                                <option value="124">Lebanon</option>
+                            
+                                <option value="125">Lesotho</option>
+                            
+                                <option value="126">Liberia</option>
+                            
+                                <option value="127">Libya</option>
+                            
+                                <option value="128">Liechtenstein</option>
+                            
+                                <option value="129">Lithuania</option>
+                            
+                                <option value="130">Luxembourg</option>
+                            
+                                <option value="131">Macao</option>
+                            
+                                <option value="132">Macedonia, the former Yugoslav Republic of</option>
+                            
+                                <option value="133">Madagascar</option>
+                            
+                                <option value="134">Malawi</option>
+                            
+                                <option value="135">Malaysia</option>
+                            
+                                <option value="136">Maldives</option>
+                            
+                                <option value="137">Mali</option>
+                            
+                                <option value="138">Malta</option>
+                            
+                                <option value="139">Marshall Islands</option>
+                            
+                                <option value="140">Martinique</option>
+                            
+                                <option value="141">Mauritania</option>
+                            
+                                <option value="142">Mauritius</option>
+                            
+                                <option value="143">Mayotte</option>
+                            
+                                <option value="144">Mexico</option>
+                            
+                                <option value="145">Micronesia, Federated States of</option>
+                            
+                                <option value="146">Moldova, Republic of</option>
+                            
+                                <option value="147">Monaco</option>
+                            
+                                <option value="148">Mongolia</option>
+                            
+                                <option value="149">Montenegro</option>
+                            
+                                <option value="150">Montserrat</option>
+                            
+                                <option value="151">Morocco</option>
+                            
+                                <option value="152">Mozambique</option>
+                            
+                                <option value="153">Myanmar</option>
+                            
+                                <option value="154">Namibia</option>
+                            
+                                <option value="155">Nauru</option>
+                            
+                                <option value="156">Nepal</option>
+                            
+                                <option value="157">Netherlands</option>
+                            
+                                <option value="158">New Caledonia</option>
+                            
+                                <option value="159">New Zealand</option>
+                            
+                                <option value="160">Nicaragua</option>
+                            
+                                <option value="161">Niger</option>
+                            
+                                <option value="162">Nigeria</option>
+                            
+                                <option value="163">Niue</option>
+                            
+                                <option value="164">Norfolk Island</option>
+                            
+                                <option value="165">Northern Mariana Islands</option>
+                            
+                                <option value="166">Norway</option>
+                            
+                                <option value="167">Oman</option>
+                            
+                                <option value="168">Pakistan</option>
+                            
+                                <option value="169">Palau</option>
+                            
+                                <option value="170">Palestinian Territory, Occupied</option>
+                            
+                                <option value="171">Panama</option>
+                            
+                                <option value="172">Papua New Guinea</option>
+                            
+                                <option value="173">Paraguay</option>
+                            
+                                <option value="174">Peru</option>
+                            
+                                <option value="175">Philippines</option>
+                            
+                                <option value="176">Pitcairn</option>
+                            
+                                <option value="177">Poland</option>
+                            
+                                <option value="178">Portugal</option>
+                            
+                                <option value="179">Puerto Rico</option>
+                            
+                                <option value="180">Qatar</option>
+                            
+                                <option value="181">Réunion</option>
+                            
+                                <option value="182">Romania</option>
+                            
+                                <option value="183">Russian Federation</option>
+                            
+                                <option value="184">Rwanda</option>
+                            
+                                <option value="185">Saint Barthélemy</option>
+                            
+                                <option value="186">Saint Helena, Ascension and Tristan da Cunha</option>
+                            
+                                <option value="187">Saint Kitts and Nevis</option>
+                            
+                                <option value="188">Saint Lucia</option>
+                            
+                                <option value="189">Saint Martin (French part)</option>
+                            
+                                <option value="190">Saint Pierre and Miquelon</option>
+                            
+                                <option value="191">Saint Vincent and the Grenadines</option>
+                            
+                                <option value="192">Samoa</option>
+                            
+                                <option value="193">San Marino</option>
+                            
+                                <option value="194">Sao Tome and Principe</option>
+                            
+                                <option value="195">Saudi Arabia</option>
+                            
+                                <option value="196">Senegal</option>
+                            
+                                <option value="197">Serbia</option>
+                            
+                                <option value="198">Seychelles</option>
+                            
+                                <option value="199">Sierra Leone</option>
+                            
+                                <option value="200">Singapore</option>
+                            
+                                <option value="201">Sint Maarten (Dutch part)</option>
+                            
+                                <option value="202">Slovakia</option>
+                            
+                                <option value="203">Slovenia</option>
+                            
+                                <option value="204">Solomon Islands</option>
+                            
+                                <option value="205">Somalia</option>
+                            
+                                <option value="206">South Africa</option>
+                            
+                                <option value="207">South Georgia and the South Sandwich Islands</option>
+                            
+                                <option value="208">South Sudan</option>
+                            
+                                <option value="209">Spain</option>
+                            
+                                <option value="210">Sri Lanka</option>
+                            
+                                <option value="211">Sudan</option>
+                            
+                                <option value="212">Suriname</option>
+                            
+                                <option value="213">Svalbard and Jan Mayen</option>
+                            
+                                <option value="214">Swaziland</option>
+                            
+                                <option value="215">Sweden</option>
+                            
+                                <option value="216">Switzerland</option>
+                            
+                                <option value="217">Syrian Arab Republic</option>
+                            
+                                <option value="218">Taiwan</option>
+                            
+                                <option value="219">Tajikistan</option>
+                            
+                                <option value="220">Tanzania, United Republic of</option>
+                            
+                                <option value="221">Thailand</option>
+                            
+                                <option value="222">Timor-Leste</option>
+                            
+                                <option value="223">Togo</option>
+                            
+                                <option value="224">Tokelau</option>
+                            
+                                <option value="225">Tonga</option>
+                            
+                                <option value="226">Trinidad and Tobago</option>
+                            
+                                <option value="227">Tunisia</option>
+                            
+                                <option value="228">Turkey</option>
+                            
+                                <option value="229">Turkmenistan</option>
+                            
+                                <option value="230">Turks and Caicos Islands</option>
+                            
+                                <option value="231">Tuvalu</option>
+                            
+                                <option value="232">Uganda</option>
+                            
+                                <option value="233">Ukraine</option>
+                            
+                                <option value="234">United Arab Emirates</option>
+                            
+                                <option value="235">United Kingdom</option>
+                            
+                                <option value="236">United States</option>
+                            
+                                <option value="237">United States Minor Outlying Islands</option>
+                            
+                                <option value="238">Uruguay</option>
+                            
+                                <option value="239">Uzbekistan</option>
+                            
+                                <option value="240">Vanuatu</option>
+                            
+                                <option value="241">Venezuela, Bolivarian Republic of</option>
+                            
+                                <option value="242">Viet Nam</option>
+                            
+                                <option value="243">Virgin Islands, British</option>
+                            
+                                <option value="244">Virgin Islands, U.S.</option>
+                            
+                                <option value="245">Wallis and Futuna</option>
+                            
+                                <option value="246">Western Sahara</option>
+                            
+                                <option value="247">Yemen</option>
+                            
+                                <option value="248">Zambia</option>
+                            
+                                <option value="249">Zimbabwe</option>
+                            
+                        </select>
+                    </div>
+                    <div class="fillinfomain">特殊需求註明</div>
+                    <div class="fillinfomain"><input type="text" id="comment" name="comment" placeholder="若您有特殊需求，請在此填寫！"></div>
+                    <div class="fillinfomain_important">
+                        &nbsp;<span class="fa fa-check-square-o" style="font-size:20px;"></span> 繼續使用代表你同意我們的<a href="/Privacy" target="_blank">服務條款與隱私權政策</a>。
+                    </div>
+                    
+                    <div class="fillinfomain_button">
+                        <div class="fillinfomain_button_bt">
+                            <button class="w3-btn" id="formSubmit">確認送出</button>
+                            <div class="room_main_right_main5_mainmain" style="color:#4197b9; font-size:14px; font-weight:400;"><span class="fa fa-clock-o" style="font-size:20px;"></span> 再一個步驟就完成囉！</div>
+                        </div>
+                    </div>
+                </div>
+
+          </div>
+        </div>
+        <!-- 左內容_end -->
+
+
+		            <!-- 右內容_start -->
+		            <div class="right">
+		                <div class="hotelsinfo">
+		                    <div class="areabgwhite">
+		                        <div class="header">素坤逸2巷最佳西方舒心飯店 SureStay Plus by Best Western Sukhumvit 2</div>
+		                        <div class="star">酒店星級 ：
+		                        	★★★★
+								</div>
+		                        <div class="add">89 Sukhumvit Soi 2, Sukhumvit Road, Klong Toey, 素坤逸路</div>
+		                    </div>
+		                    <div class="areabggray">
+		                        <div class="checkin">
+		                            <div class="title">入住日期</div>
+		                            <div>2018年09月</div><div><span class="date">25</span>日</div>
+		                            <div>星期二</div>
+                        			<div>13:00起入住</div>
+		                        </div>
+		                        <div class="arrow">
+		                            <span class="fa fa-arrow-circle-right"></span>
+		                        </div>
+		                        <div class="checkout">
+		                            <div class="title">退房日期</div>
+		                            <div>2018年09月</div><div><span class="date">27</span>日</div>
+		                            <div>星期四</div>
+                        			<div>10:00前退房</div>
+		                        </div>
+		                    </div>
+                            <div class="areabgwhite">
+                                <span class="header">訂房明細</span>
+                                <table width="100%" cellspacing="2" cellpadding="2" style="margin-top:20px;">
+                                  <tbody><tr>
+                                    <td width="90"><span class="main">房型</span></td>
+                                    <td>Special Family</td>
+                                  </tr>
+                                  <tr>
+                                    <td width="90"><span class="main">預訂摘要</span></td>
+                                    <td>2晚，1間房，2位大人，0個兒童</td>
+                                  </tr>
+                                  <tr>
+                                    <td width="90"><span class="main">人數限制</span></td>
+                                    <td>4位大人，3位兒童</td>
+                                  </tr>
+                                  <tr>
+                                    <td width="90"><span class="main" style="color:green; font-weight:600;">取消政策</span></td>
+                                    <td>
+                                        <ol style="margin-bottom:0;">
+                                                                                        
+                                            <li style="color:#1e90fe;list-style-type:none;margin-bottom: 0px;">
+                                                <span class="roomsearchtooltip">
+                                                    <div style="display:flex;">
+                                                        <span class="fa fa-exclamation-circle" style="display:inline;"></span>
+                                                        <span style="display:inline;margin-top: -6px;">一週前（7天）取消，扣款25%</span>
+                                                    </div>
+                                                    <span class="tooltiptext">入住一週前（7天）取消訂房，扣款單晚房價的25%</span>
+                                               </span>
+                                            </li>
+                                        
+                                            <li style="color:#1e90fe;list-style-type:none;margin-bottom: 0px;">
+                                                <span class="roomsearchtooltip">
+                                                    <div style="display:flex;">
+                                                        <span class="fa fa-exclamation-circle" style="display:inline;"></span>
+                                                        <span style="display:inline;margin-top: -6px;">入住前4~6天取消，扣款50%</span>
+                                                    </div>
+                                                    <span class="tooltiptext">到店前4~6天內取消訂單，需扣第一晚房價的50%費用</span>
+                                               </span>
+                                            </li>
+                                        
+                                            <li style="color:#1e90fe;list-style-type:none;margin-bottom: 0px;">
+                                                <span class="roomsearchtooltip">
+                                                    <div style="display:flex;">
+                                                        <span class="fa fa-exclamation-circle" style="display:inline;"></span>
+                                                        <span style="display:inline;margin-top: -6px;">入住前1～3天，扣款75%</span>
+                                                    </div>
+                                                    <span class="tooltiptext">到店前1～3天取消訂單，需扣第一晚房價的75%費用</span>
+                                               </span>
+                                            </li>
+                                        
+                                            <li style="color:#1e90fe;list-style-type:none;margin-bottom: 0px;">
+                                                <span class="roomsearchtooltip" style="border-bottom:1px dotted #ffffff;">
+                                                    <div style="display:flex;">
+                                                        <span class="fa fa-exclamation-circle" style="display:inline;"></span>
+                                                        <span style="display:inline;margin-top: -6px;">入住前24小時內，扣款100%</span>
+                                                    </div>
+                                                    <span class="tooltiptext">到店24小時內取消訂單，需扣第一晚房價的100%費用，24小時以前則不扣款</span>
+                                               </span>
+                                            </li>
+                                        
+                                        </ol>                                    
+                                    </td>
+                                  </tr>
+
+                                <tr style="background-color:#ffc;">
+                                <td width="90">
+                                    <span class="main" style="color:orange; font-weight:600;">您的預定包含</span>
+                                </td>
+                                <td>
+                                    <div>
+                                        <span style="padding-right:20px;display:inline-block;">早餐</span>
+                                        <span style="padding-right:20px;display:inline-block;">免費Wifi</span>
+                                        <span style="padding-right:20px;display:inline-block;">免費手機充電</span>
+                                        <span style="padding-right:20px;display:inline-block;">免費健身房</span>
+                                        <span style="padding-right:20px;display:inline-block;">免費游泳池</span>
+                                    </div>
+                                </td>
+                                </tr>
+                              </tbody></table>
+                            </div>
+                            <div class="areabggraytot">
+                                <div class="header" style="text-align: left;padding-bottom:10px;">每日房價</div>
+                                <div class="left">2018年08月22日</div>
+                                <div class="right">NT$ 2,390</div>
+                                <div style="display: table;width:100%;background-color:#ffe5dd;padding:5px 0 13px 0;color:#F44336;font-weight:600;">
+                                    <div class="left">2018年08月23日</div>
+                                    <div class="right" style="line-height:18px;position:relative;top:4px;"><span class="fa fa-exclamation-triangle"></span>本日此房已售罄<br><a href="#" style="color: #4469ae;">請選擇其他日子</a></div>
+                                </div>
+                                <div class="left"><hr></div><div class="right"><hr></div>
+                                <div class="left">每晚訂房數量</div>
+                                <div class="right">x 1</div>                    
+                            </div>                            
+		                    <div class="areabggraytot" style="background-color: #fffff4;">
+		                    	<div class="header" style="text-align:left;padding-bottom:10px;color:#000;font-weight:400;">價格明細</div>
+                                <div style="border-bottom:solid 1px #E8E8E8;display:flex;">
+                                    <div style="text-align:left;">住宿費用</div>
+                                    <div style="margin:auto 0px auto auto;">TWD $3,138</div>
+                                </div>
+                                <div style="border-bottom:solid 1px #E8E8E8;display:flex;">
+                                    <div style="text-align:left;">營業稅5%</div>
+                                    <div style="margin:auto 0px auto auto;">TWD $157</div>
+                                </div>
+                                <div style="border-bottom:solid 1px #E8E8E8;display:flex;">
+                                    <div style="text-align:left;">服務費10%</div>
+                                    <div style="margin:auto 0px auto auto;">TWD $314</div>
+                                </div>
+                                <!--20181108使用優惠碼start-->
+                                <div style="border-bottom:solid 1px #E8E8E8;display:block;">
+                                    <div style="display:flex;color:#F30;">
+                                        <div style="text-align:left;">使用優惠代碼折價</div>
+                                        <div style="margin:auto 0px auto auto;">TWD -$850.00</div>
+                                    </div>
+                                    <div style="display:flex;margin-top:-8px;">
+                                        <div style="margin:auto 0px auto auto;"><a href="javascript:void(0)" style="border-bottom:none;color:#390;">移除此折價</a></div>
+                                    </div>
+                                </div>
+                                <!--20181108使用優惠碼end-->
+		                    </div>
+		                    <div class="areabggrayheavy">
+		                        <div class="left">總金額</div>
+		                        <div class="right">TWD $2,759</div>
+		                        <div class="note"><span class="fa fa-exclamation-circle" style="font-size:15px;"></span> 此價格已含稅金和服務費</div>
+			  				</div>
+                            
+                            
+                            <!--20181108使用優惠碼成功start-->
+                            <div class="newoffercode">
+                                <div style="display:block; background-color:#f5dddf; padding:20px;">
+                                    <div class="roomsearchtooltipcode" style="padding-bottom:5px; border-bottom:none;">
+                                    使用優惠代碼&nbsp;(&nbsp;<span style="border-bottom:dotted 1px #d62faf; "><span class="fa fa-question-circle"></span>&nbsp;如何取得優惠代碼！</span>&nbsp;)
+                                    <span class="tooltiptext">
+                                        我們會將優惠代碼以電子郵件傳送給我們的會員，或是透過其他促銷活動來發送給顧客。您可以隨時關注我們的臉書，取得最新的優惠活動訊息。
+                                    </span>
+                                    </div>
+                                    <div class="fillinfomain" style="display:block; color:red; margin-top:-10px; font-weight:600; padding-left:0;">
+                                        恭喜！優惠代碼兌換成功。
+                                    </div>
+                                </div>
+                            </div>
+                            <!--20181108使用優惠碼成功end-->
+                            
+                            
+                            
+                            
+                            
+                            <!--20181108入住3晚贏得獎勵_圖片start-->
+                            <div style="display:block;width:100%;height:160px;background-color:#5b4f48;background-image:url(images_index/20181011hotelsrewards_bg.jpg);overflow:hidden;">
+                                <div style="display:flex; align-items:center; justify-content:center;">
+                                    <a href="42_service_points.html" target="_blank"><img src="images_index/20181011hotelsrewards_s3_mobile.png" style="position:relative; top:1px;"></a>
+                                </div>
+                            </div>
+                            <!--20181108入住3晚贏得獎勵_圖片end-->
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+			  				
+	                  </div>		
+		            </div>
+		            <!-- 右內容_end -->
+
+
+
+
+    </div>
+    <!-- 左右內容_end -->
+    
+    
+
+
+
+
+
+
+</div>                        
+</div>
+<!-- Main end -->
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                
+
+			<!-- CTA 
+				<section id="cta">
+
+					<header>
+						<h2>還想 <strong>預訂</strong> 其他服務嗎?</h2>
+						<p>我們提供的包車服務榮獲各地旅客好評推薦，提供安全，舒適合格車輛。包車一日遊、自由行，讓我們為您的交通代勞！</p>
+					</header>
+					<footer>
+						<ul class="buttons">
+							<li><a href="#" class="button special">包車服務</a></li>
+							<li><a href="#" class="button">機場接送</a></li>
+						</ul>
+					</footer>
+
+				</section>
+			 CTA -->
+
+
+
+
+
+
+
+
+
+<!-- footer0403 start -->
+<div class="footer0403">
+    <section id="integral">
+        <div class="row">
+            <div class="wrap">
+                <div class="content2">
+                    <div class="footer0403company_en" style="color:#FFF;">World Starway (Hong Kong) Travel Limited.</div>
+                    <div class="footer0403company" style="color:#FFF;margin-bottom: 10px;">
+                        星程旅遊(香港)有限公司
+                    </div>
+                    <div class="footer0403company_en" style="line-height:26px;">
+                        <span>Starway Travel Korea.</span>
+                        <span class="footer0403company_en_facebooklink"><a href="https://zh-tw.facebook.com/starwaytravel/" target="_blank"><span class="fa fa-facebook-square"></span></a></span>
+                    </div>
+                    <div class="footer0403company_en" style="line-height:26px;">
+                        <span>Starway Travel Japan.</span>
+                        <span class="footer0403company_en_facebooklink"><a href="https://www.facebook.com/Japanstarwaytravel/" target="_blank"><span class="fa fa-facebook-square"></span></a></span>
+                    </div>
+                    <div class="footer0403company_en" style="line-height:26px;">
+                        <span>Starway Travel Taiwan.</span>
+                        <span class="footer0403company_en_facebooklink"><a href="https://www.facebook.com/taiwanstarwaytravel/" target="_blank"><span class="fa fa-facebook-square"></span></a></span>
+                    </div>
+                    <div class="footer0403company_en" style="line-height:26px;">
+                        <span>Starway Travel Vietnam.</span>
+                        <span class="fa fa-facebook-square" style="color:#4A4A4A;"></span>
+                    </div>
+                    <div class="footer0403company_en" style="line-height:26px;">
+                        <span>Starway Travel Thailand.</span>
+                        <span class="footer0403company_en_facebooklink"><a href="https://www.facebook.com/thailandstarwaytravel/" target="_blank"><span class="fa fa-facebook-square"></span></a></span>
+                    </div>
+                    <div class="footer0403company_en"> © 2017-2022 World StarwayTravel Limited.</div>
+                    <div class="footer0403company">All Rights Reserved.</div>
+                </div>
+                <div class="content3">
+                    <div class="footer0403company_title">
+                        星程資訊
+                    </div>
+                    <a href="https://www.starwaytravel.online/aboutStarwayTravel">
+                        <div class="footer0403company_main">
+                            關於星程旅遊
+                        </div>
+                    </a>
+                    <a href="https://www.starwaytravel.online/Privacy">
+                        <div class="footer0403company_main">
+                            使用者條款與隱私權聲明
+                        </div>
+                    </a>
+                    <a href="https://www.starwaytravel.online/refundPolicy">
+                        <div class="footer0403company_main">
+                            取消和退款政策
+                        </div>
+                    </a>
+                    <a href="42_service_points.html">
+                        <div class="footer0403company_main">
+                            星程旅遊酒店獎勵計畫
+                        </div>
+                    </a>
+                    <a href="42a_service_process.html">
+                        <div class="footer0403company_main">
+                            常見問題
+                        </div>
+                    </a>
+                    <a href="42f_service_contact.html">
+                        <div class="footer0403company_main">
+                            聯絡我們
+                        </div>
+                    </a>
+                    <div class="footer0403company_title" style="margin-top:30px;">
+                        我們的社群
+                    </div>
+                    <div class="footer0403company_main_card" style="font-size:30px;">
+                        <a href="https://www.youtube.com/channel/UCMF4R5SKMebot-7P4g4Cwqw" target="_blank"><span class="fa fa-youtube-square"></span></a>
+                    </div>
+                </div>
+                <div class="content3">
+                    <div class="footer0403company_title">
+                        隨時隨地星程伴你遨遊
+                    </div>
+                    <div class="footer0403company_main">
+                        請掃 QR-Code
+                    </div>
+                    <div class="footer0403company_main">
+                        用手機瀏覽星程旅遊
+                    </div>
+                    <div class="footer0403company_main">
+                        <a href="https://www.starwaytravel.online/" target="_blank"><img src="./images_index/starway-kr-qrcode.png"></a>
+                    </div>
+                </div>
+                <div class="content3">
+                    <div class="footer0403company_title">
+                        聯盟合作夥伴
+                    </div>
+                    <a href="https://www.starwaytravel.online/hotel/search" target="_blank">
+                        <div class="footer0403company_en">
+                            飯店業者合作 Hotels Rental
+                        </div>
+                    </a>
+                    <div class="footer0403company_title" style="margin-top:30px;">
+                        歡迎使用
+                    </div>
+                    <div class="footer0403company_main_card">
+                        <img src="./images_index/footer_card_visa.png">
+                        <img src="./images_index/footer_card_mastercard.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- footer0403 end -->
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+            
+            
+
+
+
+
+            
+<!--上方選單停駐start-->
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<!--上方選單停駐end-->
+
+
+
+
+<!--點擊下拉菜單start-->
+<script>
+
+/* 第一個欄位When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction1() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+/* 第二個欄位When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction2() {
+    document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+/* 第三個欄位When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction3() {
+    document.getElementById("myDropdown3").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+/* 第四個欄位When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction4() {
+    document.getElementById("myDropdown4").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<!--點擊下拉菜單end-->
+
+
+
+
+<!--手機版客人選單彈出修改start-->
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<!--手機版客人選單彈出修改end-->
+
+
+
+            
+
+	</body>
+</html>
