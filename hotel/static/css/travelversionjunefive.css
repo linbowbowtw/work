@@ -1,0 +1,268 @@
+
+.travelindexmobileusedesktopnoshow_mobile{
+	display:none;
+}
+
+#starwaytraveltopphoto100percentmobile{
+	display:none;
+}
+
+@media screen and (max-width: 736px) {
+	
+.travelversionjunefive{
+display:none;
+}
+
+.travelindexmobileusedesktopnoshow{
+display:none;
+}
+
+#starwaytraveltopphoto100percentmobile{
+	font-family: Microsoft JhengHei;
+	display: inherit;
+}
+.travelindexmobileusedesktopnoshow_mobile{
+	display:block;
+    position: relative;
+    top: -35px;
+}
+
+}    
+
+
+.popularactivities{
+	display: inherit;
+}
+.popularactivities_mobile{
+	display: none;
+}
+@media screen and (max-width: 736px) {
+.popularactivities{
+	display: none;
+}
+.popularactivities_mobile{
+	display: inherit;
+}
+}
+
+
+
+.popularseasontheme{
+	display: inherit;
+}
+.popularseasontheme_mobile{
+	display: none;
+}
+@media screen and (max-width: 736px) {
+.popularseasontheme{
+	display: none;
+}
+.popularseasontheme_mobile{
+	display: inherit;
+}
+}
+
+
+.recommendedforhighqualityactivities{
+	display: inherit;
+}
+.recommendedforhighqualityactivities_mobile{
+	display: none;
+}
+@media screen and (max-width: 736px) {
+.recommendedforhighqualityactivities{
+	display: none;
+}
+.recommendedforhighqualityactivities_mobile{
+	display: inherit;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.travelversionjunefive{
+	font-family: "Microsoft JhengHei";
+	width: 100%;
+	height: 600px;
+}
+
+.travelversionjunefivefield{
+    margin: auto;
+    width: 950px;
+    position: relative;
+    top: 220px;
+    z-index: 9999;
+}
+@media screen and (max-width: 1170px) {
+.travelversionjunefivefield{
+	margin: auto;
+	width: 850px;
+	padding-top: 220px;
+}
+}
+@media screen and (max-width: 955px) {
+.travelversionjunefivefield{
+	margin: auto;
+	width: 700px;
+	padding-top: 220px;
+}
+}
+
+
+.travelversionjunefive2{
+	width: 100%;
+	/*height: 120px;*/
+	background-color: #FFF;
+    text-align: center;
+    text-align: -webkit-center;
+	border-bottom-width: 1px;
+    border-bottom-style: solid;
+	border-bottom-color: #E7E7E7;
+	position: relative;
+    top: -36px;
+}
+
+.travelversionjunefive2 .threezero{
+	width: 1150px;
+	/*background-color: #CCC;*/
+	display: table;
+	margin: auto;
+}
+
+@media screen and (max-width: 1170px) {
+.travelversionjunefive2 .threezero{
+	width: 950px;
+	/*background-color: #CCC;*/
+	display: table;
+	margin: auto;
+}
+}
+
+@media screen and (max-width: 955px) {
+.travelversionjunefive2 .threezero{
+	width: 780px;
+	/*background-color: #CCC;*/
+	display: table;
+	margin: auto;
+}
+}
+
+.travelversionjunefive2 .threeone{
+	width: 33.3%;
+	/*background-color: #6FF;*/
+	display: table-cell;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #E7E7E7;
+	vertical-align: middle;
+	height:80px;
+}
+
+.travelversionjunefive2 .threetwo{
+	width: 33.3%;
+	/*background-color: #FFC;*/
+	display: table-cell;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #E7E7E7;
+	vertical-align: middle;
+	height:80px;
+}
+
+.travelversionjunefive2 .threethree{
+	width: 33.3%;
+	/*background-color: #FCF;*/
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.threezero a{
+	display: table-cell;
+	border: none;
+	vertical-align: middle;
+	height:80px;
+    cursor: pointer;/*延遲*/
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;/*延遲*/
+}
+
+.threezero a:hover{
+	display: table-cell;
+	border-right-style: none;
+	vertical-align: middle;
+	height: 80px;
+	background-color: #FFF5CE;
+	color:#000;
+}
+
+
+.travelversionjunefivefield button{
+	float: left;
+	padding-left: 50px;
+	padding-right: 50px;
+    padding-top: 23px;
+    padding-bottom: 44px;
+	font-size: 16px;
+	background-color: #FF9900;
+    cursor: pointer;/*延遲*/
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;/*延遲*/
+}
+
+.travelversionjunefivefield button:hover{
+	background-color: #fd5630;
+}
+
+/*下拉小三角start*/
+.travelversionjunefive .hotelstopfixformfieldtriangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #ffe8a6 transparent;
+    position: relative;
+    left: 40px;
+    z-index: 999 !important;
+    display: block;
+}
+/*下拉小三角end*/
+
+
+.footer0403company_en_facebooklink{
+	padding-left: 12px;
+	position: relative;
+	top: 3px;
+	/*font-size:26px;*/
+}
+
+
+
+.twsmar_toptitle .logo a img{
+	position: relative;
+	top: -5px;
+}
+
+.newindexjuneeight{
+	margin-top:5em;
+}
+@media screen and (max-width: 736px) {
+.newindexjuneeight{
+	margin-top:0em;
+}
+}
+
+
