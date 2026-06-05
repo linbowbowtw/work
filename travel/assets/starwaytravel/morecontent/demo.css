@@ -1,0 +1,32 @@
+.examplemorecontent {
+	-webkit-transition: color .85s;
+	-o-transition: color .85s;
+	transition: color .85s;
+}
+
+.mrc-btn-wrap {
+	display: inline-block;
+	margin: 15px 0;
+}
+
+.mrc-shadow {
+	pointer-events: none;
+	position: absolute;
+	height: 100px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 8;
+	background-image: url("../images/stmorecontentmask.png");
+	
+	/*
+	background-image: url("/static/idx/starwaytravel/images/stmorecontentmask.png");
+	*/
+	
+	/*
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(14%, #fff), to(rgba(0, 0, 0, 0)));
+	background: -webkit-linear-gradient(bottom, #fff9e5 14%, rgba(0, 0, 0, 0) 100%);
+	background: -o-linear-gradient(bottom, #fff9e5 14%, rgba(0, 0, 0, 0) 100%);
+	background: linear-gradient(to top, #fff9e5 14%, rgba(0, 0, 0, 0) 100%);
+	*/
+}
